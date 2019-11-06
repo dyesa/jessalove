@@ -27,28 +27,20 @@
   #left{
        flex: 1; 
        left:0;
-       width:150px;    
-       background-color:#F6070B;
+       width:50%;    
+       background-color:pink;
        height:100vh;
        position:fixed;
        top:0;
   }
 
-  #center {
-       margin-left:180px;
-       margin-right: 180px;
+  #right {
+       width:50%;
+       right:0;
        flex: 3;
-       background-color: lightblue;
+       top:0;
+       background-color:black;
 
-  }
-
-  #right{
-      width:150px;
-      right:0;
-      height:100vh;
-      position:fixed;
-      top:0;
-      background-color: #FAF000;
   }
 
 </style>
@@ -63,14 +55,13 @@
   
   <div id="wrapper">
         <div id="left" >First</div>
-        <div id="center" >
+        <div id="right" >
         <script>
         for(i=0; i< 100; i++){
         document.write("Dummy Text<br/>");
         }
         </script>
         </div>
-        <div id="right" >Third</div>
    </div>
   
   <center><font size ="12">
