@@ -17,6 +17,39 @@
   p.a {
   font-family: "Aharoni", serif;
   }
+  
+  #wrapper{
+
+    background-color:pink;
+    display: flex;
+  }
+
+  #left{
+       flex: 1; 
+       left:0;
+       width:150px;    
+       background-color:#F6070B;
+       height:100vh;
+       position:fixed;
+       top:0;
+  }
+
+  #center {
+       margin-left:180px;
+       margin-right: 180px;
+       flex: 3;
+       background-color: lightblue;
+
+  }
+
+  #right{
+      width:150px;
+      right:0;
+      height:100vh;
+      position:fixed;
+      top:0;
+      background-color: #FAF000;
+  }
 
 </style>
 </head>
@@ -27,6 +60,19 @@
   <br>
   <br>
   <br>
+  
+  <div id="wrapper">
+        <div id="left" >First</div>
+        <div id="center" >
+        <script>
+        for(i=0; i< 100; i++){
+        document.write("Dummy Text<br/>");
+        }
+        </script>
+        </div>
+        <div id="right" >Third</div>
+   </div>
+  
   <center><font size ="12">
     <p class = "a">Hi! It's me, Jessa.</p></font></center>
    
