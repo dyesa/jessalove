@@ -33,7 +33,7 @@
     display: flex;
   }
 
-  #left{
+  .left{
        flex: 1; 
        left:0;
        width:50%;    
@@ -43,12 +43,13 @@
        top:0;
   }
 
-  #right {
+  .right {
        width:50%;
        right:0;
        flex: 3;
        top:0;
        background-color:black;
+       float: left;
   }
 
 </style>
@@ -60,11 +61,11 @@
   <br>
   <br>
 
-<div id="left" >
+<div class="left" >
   <h1>ABOUT</h1>
 </div>
     
-<div id="right" >          
+<div class="right" >          
   <p class = "a">Hi! It's me, Jessa.</p>
   <p class = "b">(This site is still under maintenance.)</p>
   
