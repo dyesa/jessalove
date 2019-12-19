@@ -44,6 +44,7 @@ top:0;
 }
 
 .right {
+height:100vh;
 background-size:100% auto;
 width:50%;
 background-color:black;
