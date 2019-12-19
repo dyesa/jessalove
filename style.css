@@ -1,0 +1,76 @@
+body {
+margin:  0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+
+p {
+color: #fefefe
+}
+
+p.header {
+color: black;
+font-family: "Aharoni"; serif;
+font-size: 40px;
+}
+
+p.about-text {
+font-family: "Century Gothic", serif;
+font-size: 15px;
+text-align: center;
+color: white;
+padding-left: 50px;
+padding-right: 50px
+}
+
+p.a {
+font-size: 36px;
+  font-family: "Aharoni", serif;
+  text-align: center;
+  color: white;
+}
+
+#wrapper{
+background-color:pink;
+display: flex;
+}
+
+.left{
+left:0;
+width:50%;
+background-color: #ffc30b;
+height:100vh;
+position:fixed;
+top:0;
+}
+
+.right {
+background-size:100% auto;
+width:50%;
+background-color:black;
+float: right;
+right:0;
+top:0;
+}
+
+.left p {
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.aboutimg {
+margin-top: 25%;
+text-align: center;
+}
+
+.w-btext {
+text-transform: uppercase;
+font-weight: bold;
+color: white;
+font-size: 20px;
+font-family: "Aharoni", serif;
+margin-left: 20%
+}
