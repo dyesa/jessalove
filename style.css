@@ -26,17 +26,34 @@ color: white;
 }
 
 
-@media screen and  (min-width:768px) {
-  .right {
+@media screen and (min-width:768px) {
+  .left, .right {
     height:100vh;
   }
 }
 
 .left {
-background-color: #ffc30b;
+background: #ffc30b;
+opacity: 100%;
+background-repeat: no-repeat;
+background-size: 100%;
+background-size: cover;
 height: 100vh;
 width: 50%;
 position: fixed;
+}
+
+.overlay {
+background: #ffc30b;
+opacity: 50%;
+height: 100vh;
+width: 50%;
+position: fixed;
+}
+
+.about-img {
+width: 100%;
+height: auto;
 }
 
 .right {
