@@ -1,0 +1,125 @@
+body {
+  overflow: hidden;
+  font-family: "avenir", sans-serif !important;
+  margin: 0px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "avenir", sans-serif !important;
+}
+
+@media screen and (max-width: 800px) {
+  .left,
+  .right {
+    width: 100% !important;
+    /* float: none !important; */
+  }
+}
+
+p#bold-hello {
+  font-size: 100px;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 2.5%;
+}
+
+p#shoutout {
+  font-size: 100px;
+  font-weight: bold;
+  padding-left: 2.5%;
+}
+
+p#subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 2.5%;
+  text-align: right;
+  font-size: 30px;
+}
+
+.left {
+  background-color: #f1ba21;
+  height: 100%;
+  width: 58.33%;
+  left: 0;
+  background-image: url("../img/jessa-darken.png");
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  /* background-size: cover; */
+  z-index: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  overflow-x: hidden;
+  background-position: left bottom;
+}
+
+.right {
+  background-color: #fff;
+  height: 100%;
+  width: 41.67%;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.center-table {
+  height: 100%;
+  background: none;
+  width: 100%;
+  display: table;
+  margin: 0;
+}
+
+.center-table p {
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle;
+}
+
+#myinnercontainer {
+  position: absolute;
+  top: 50%;
+}
+
+.text-above {
+  height: 100%;
+  background: none;
+  width: 100%;
+  display: table;
+  position: absolute;
+  z-index: 2;
+  margin-top: 12%;
+}
+
+.text-above p {
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle;
+  z-index: 2;
+}
+
+.icon-align {
+  z-index: 3;
+  position: relative;
+  padding-top: 82%;
+  padding-bottom: 18%;
+  padding-left: 2.5%;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  /* vertical-align: middle; */
+}
+
+.icons {
+  height: 30px;
+}
