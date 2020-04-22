@@ -1,10 +1,13 @@
 html,
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: "avenir", sans-serif !important;
   margin: 0px !important;
-  height: 100%;
-  margin: 0;
+  font-size: calc (1em + 1vw);
+}
+
+html {
+  font-size: calc(1em + 1vw);
 }
 
 h1,
@@ -17,44 +20,55 @@ p {
   font-family: "avenir", sans-serif !important;
 }
 
-@media all and (max-width: 800px) {
-  .left,
+/* @media (min-width: 768px) {
+  body {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  }
+} */
+
+@media all and (max-width: 768px) {
+  .left {
+    color: #fff8e7;
+    width: 100% !important;
+  }
   .right {
     display: block !important;
     width: 100% !important;
     float: none !important;
   }
-  p {
-    color: #f5f5dc;
+  .footer {
+    width: 100% !important;
+  }
+
+  .footer-icons {
+    width: 100% !important;
   }
 }
 
-p#bold-hello {
-  font-size: 100px;
+p.bold-hello {
+  font-size: 3.5em;
   font-weight: bold;
   text-align: right;
   padding-right: 2.5%;
 }
 
-p#shoutout {
-  font-size: 100px;
+p.bold-name {
+  font-size: 3.5em;
   font-weight: bold;
+  text-align: left;
   padding-left: 2.5%;
 }
 
-p#subtitle {
-  font-size: 30px;
+p.subtitle {
+  font-size: 1em;
   font-weight: bold;
-  padding-right: 2.5%;
-  text-align: right;
-  font-size: 30px;
 }
 
 .left {
   background-color: #f1ba21;
   min-height: 100vh;
-  width: 58.33%;
-  left: 0;
+  width: 100%;
   background-image: url("../img/jessa-darken.png");
   background-blend-mode: darken;
   background-attachment: fixed;
@@ -64,31 +78,49 @@ p#subtitle {
   background-repeat: no-repeat;
   overflow-x: hidden;
   background-position: left bottom;
-  float: left;
 }
 
 .right {
   background-color: #fff;
   min-height: 100vh;
-  width: 41.67%;
-  right: 0;
   z-index: 1;
   overflow-x: hidden;
-  float: right;
+  width: 100%;
 }
 
 .center-table {
-  height: 100%;
   background: none;
   width: 100%;
   display: table;
-  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.table-overlap {
+  background: none;
+  width: 100%;
+  display: table;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .center-table p {
   display: table-cell;
-  margin: 0;
   vertical-align: middle;
+}
+
+.table-overlap p {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 3.5%;
+}
+
+.floater {
+  line-height: 10%;
 }
 
 #myinnercontainer {
@@ -114,9 +146,44 @@ p#subtitle {
 }
 
 .icons {
-  height: 30px;
+  height: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .container {
   height: 100%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  color: white;
+}
+
+.footer-icons {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  vertical-align: middle;
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.tiny-text {
+  margin-top: 30px;
+  color: gray;
+  font-size: 12px;
+}
+
+.notsotiny {
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
