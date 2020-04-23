@@ -36,6 +36,7 @@ p {
     display: block !important;
     width: 100% !important;
     float: none !important;
+    height: 50vh !important;
   }
 
   . .footer {
@@ -188,4 +189,39 @@ p.subtitle {
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 30px;
+}
+
+.wexp {
+  column-count: 3;
+  column-gap: 40px;
+  background-color: #fff;
+  overflow-x: hidden;
+  width: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.wexp-intro {
+  background-color: #fff;
+  overflow-x: hidden;
+  width: 100%;
+  text-align: left;
+  padding-top: 100px;
+}
+
+.centered-text {
+  text-align: left;
+}
+
+p.notsotitle {
+  font-size: 0.8em;
+  color: #303030;
+}
+
+.wexp-outro {
+  background-color: #fff;
+  overflow-x: hidden;
+  width: 100%;
+  text-align: left;
+  color: transparent;
 }
