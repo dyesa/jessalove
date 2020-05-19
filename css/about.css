@@ -1,0 +1,25 @@
+html,
+body {
+  /* overflow: hidden; */
+  font-family: "avenir", sans-serif !important;
+  margin: 0px !important;
+  font-size: calc (1em + 1vw);
+}
+
+html {
+  font-size: calc(1em + 1vw);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "avenir", sans-serif !important;
+}
+
+p.about {
+  font-size: 18px;
+  color: #303030;
+}
