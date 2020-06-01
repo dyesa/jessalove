@@ -45,13 +45,18 @@ h6 {
   .footer-icons {
     width: 100% !important;
   }
+
+  p.bold-hello {
+    text-align: center;
+  }
 }
 
 p.bold-hello {
   font-size: 100px;
   font-weight: bold;
   text-align: right;
-  padding-right: 2.5%;
+  padding-right: 10%;
+  padding-top: 10%;
 }
 
 p.bold-name {
@@ -73,11 +78,15 @@ p.company {
   color: #303030;
 }
 
+.me {
+  width: 250px;
+}
+
 .left {
   background-color: #fff;
   min-height: 100vh;
   width: 100%;
-  background-image: url("../img/img-01.png");
+  /* background-image: url("../img/me.png"); */
   background-size: 1000px 1000px;
   background-size: cover;
   z-index: 2;
